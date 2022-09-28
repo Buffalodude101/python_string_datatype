@@ -30,11 +30,14 @@ print(first_name[0])
 print(last_name[-3])
 print(first_name[0 : 2])
 print(last_name[ -2: ])
+
+
 #TODO Combining Strings
 #   - Print the following items (one per line) (print using variables)
 #       -first name and last name combined
+print(first_name, last_name)
 #       -first name six times
-
+print((first_name + '\n')* 6)
 
 
 
