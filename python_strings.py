@@ -46,17 +46,26 @@ current_year = 2022
 #   - Print the following items (one per line) (print using variables)
 #       - first name last name -was born in- year of birth
 #       - first name last name -was born in- year of birth. first name -enjoyed celebrating- current year
-birth_year_statement = first_name + last_name + 'was born in' + str(birth_year)
+birth_year_statement = (f"{first_name} {last_name} was born in {birth_year}")
 print(birth_year_statement)
+
+birth_year_celebration = (f"{birth_year_statement}. {first_name} enjoyed celebrating {current_year}. ")
+print(birth_year_celebration)
 
 # TODO Escape characters
 #   - Print the following items (one per line) (print using variables)
 #       - possesive first name -birth year is- year of birth 
 #       - tab last name current year
+escape_ex = f"{first_name}'s birth year is {birth_year}"
+print(escape_ex)
 
-
+tab_ex = f"\t{last_name} {current_year}"
+print(tab_ex)
 # TODO String methods
 #   - Print the following items (one per line) (print using variables)
 #       - first name and last name in lower case
 #       - length of last name
 #       - first name and last name all in upper case
+print(f"{first_name.casefold()} {last_name.casefold()}")
+print(len(last_name))
+print(f"{first_name.upper()} {last_name.upper()}")
